@@ -20,13 +20,38 @@ main {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap;
   padding: 1rem;
   height: 100%;
   width: 100%;
 }
 
 .transform {
-  height: 200px;
-  width: 200px;
-  background-color: whitesmoke;
+  height: 300px;
+  width: 300px;
+  background-color: green;
+  padding: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+.rotate > img {
+  /* 
+  deg 0 - 360
+  turn 0.0 - 0.99
+  rad 
+  */
+  transform: rotate(155deg);
+}
+
+.scale > img {
+  /* 1 - infinity */
+  transform: scale(1.5);
+}
+
+.skew > img {
+  /* deg 0 - 180 */
+  transform: skew(20deg);
 }
