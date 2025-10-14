@@ -24,6 +24,7 @@ main {
   padding: 1rem;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .transform {
@@ -33,11 +34,15 @@ main {
   padding: 1rem;
 }
 
+.transform > img {
+  transition: transform 1s;
+}
+
 img {
   width: 100%;
 }
 
-.rotate > img {
+.rotate > img:hover {
   /* 
   deg 0 - 360
   turn 0.0 - 0.99
@@ -46,12 +51,32 @@ img {
   transform: rotate(155deg);
 }
 
-.scale > img {
+.scale > img:hover {
   /* 1 - infinity */
   transform: scale(1.5);
 }
 
-.skew > img {
+.skew > img:hover {
   /* deg 0 - 180 */
   transform: skew(20deg);
+}
+
+.translate > img:hover {
+  width: 80%;
+  transform: translate(67px, -100px);
+}
+
+.chain > img:hover {
+  width: 50%;
+  transform: skew(48deg) rotate(278deg) translate(-100px);
+}
+
+.perspective > img:hover {
+  width: 50%;
+  transform: perspective(200px) translate(150px) rotateX(45deg);
+}
+
+.t-origin > img:hover {
+  transform: rotate(360deg);
+  transform-origin: left bottom;
 }
