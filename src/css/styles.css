@@ -35,7 +35,10 @@ main {
 }
 
 .transform > img {
-  transition: transform 1s;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: 0.5s;
 }
 
 img {
@@ -58,21 +61,18 @@ img {
 
 .skew > img:hover {
   /* deg 0 - 180 */
-  transform: skew(20deg);
+  transform: skew(70deg);
 }
 
 .translate > img:hover {
-  width: 80%;
   transform: translate(67px, -100px);
 }
 
 .chain > img:hover {
-  width: 50%;
   transform: skew(48deg) rotate(278deg) translate(-100px);
 }
 
 .perspective > img:hover {
-  width: 50%;
   transform: perspective(200px) translate(150px) rotateX(45deg);
 }
 
