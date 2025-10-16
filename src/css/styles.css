@@ -84,7 +84,8 @@ img {
 /* transition timing function */
 
 .easeout > img:hover,
-.easein > img:hover {
+.easein > img:hover,
+.easeinout > img:hover {
   transform: translate(100%, 100%);
 }
 
@@ -95,5 +96,10 @@ img {
 
 .easein > img {
   transition: transform 1s ease-in;
+  width: 60%;
+}
+
+.easeinout > img {
+  transition: transform 1s ease-in-out;
   width: 60%;
 }
