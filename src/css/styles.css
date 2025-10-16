@@ -81,11 +81,19 @@ img {
   transform-origin: left bottom;
 }
 
+/* transition timing function */
+
+.easeout > img:hover,
+.easein > img:hover {
+  transform: translate(100%, 100%);
+}
+
 .easeout > img {
-  transition: ease-out 1s;
+  transition: transform 1s ease-out;
   width: 60%;
 }
 
-.easeout > img:hover {
-  transform: translate(100%, 100%);
+.easein > img {
+  transition: transform 1s ease-in;
+  width: 60%;
 }
