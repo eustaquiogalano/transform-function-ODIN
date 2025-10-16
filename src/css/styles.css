@@ -80,3 +80,12 @@ img {
   transform: rotate(360deg);
   transform-origin: left bottom;
 }
+
+.easeout > img {
+  transition: ease-out 1s;
+  width: 60%;
+}
+
+.easeout > img:hover {
+  transform: translate(100%, 100%);
+}
