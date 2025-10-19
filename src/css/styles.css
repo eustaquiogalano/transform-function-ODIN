@@ -100,6 +100,22 @@ img {
 }
 
 .easeinout > img {
-  transition: transform 1s ease-in-out;
+  transition: trans form 1s ease-in-out;
   width: 60%;
+}
+
+.in-and-out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.in-and-out > img {
+  width: 60%;
+}
+
+.translateDown {
+  transform: translateY(200px);
 }
