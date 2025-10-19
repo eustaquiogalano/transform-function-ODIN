@@ -24,7 +24,7 @@ main {
   padding: 1rem;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .transform {
@@ -34,7 +34,8 @@ main {
   padding: 1rem;
 }
 
-.transform > img {
+.transform img {
+  will-change: transform;
   transition-property: transform;
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -83,15 +84,20 @@ img {
 
 /* transition timing function */
 
-.easeout > img:hover,
+.easeout div:hover img,
 .easein > img:hover,
 .easeinout > img:hover {
   transform: translate(100%, 100%);
 }
 
-.easeout > img {
+.easeout img {
   transition: transform 1s ease-out;
   width: 60%;
+  height: auto;
+}
+
+.easeout div {
+  border: 1px solid black;
 }
 
 .easein > img {
@@ -113,6 +119,7 @@ img {
 }
 
 .in-and-out > img {
+  will-change: transform;
   width: 60%;
 }
 
