@@ -126,3 +126,32 @@ img {
 .translateDown {
   transform: translateY(200px);
 }
+
+/* animation practice */
+
+.animate img {
+  animation: 2s change-bg-color infinite alternate;
+}
+
+.animate p {
+  animation: 2s change-font-color infinite alternate;
+}
+
+@keyframes change-font-color {
+  0% {
+    color: black;
+  }
+
+  100% {
+    color: white;
+  }
+}
+
+@keyframes change-bg-color {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: rgb(43, 43, 43);
+  }
+}
