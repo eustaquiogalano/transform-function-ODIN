@@ -168,3 +168,29 @@ img {
     opacity: 0%;
   }
 }
+
+.animate-backnforth > img {
+  width: 50%;
+  animation-name: box-dance;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes box-dance {
+  25% {
+    /* 100px right and 0px down */
+    transform: translate(100px, 0);
+  }
+
+  50% {
+    /* 100px right and 100px down */
+    transform: translate(100px, 100px);
+    opacity: 100%;
+  }
+
+  75% {
+    /* 0px right and 100px down */
+    transform: translate(0, 100px);
+    opacity: 0%;
+  }
+}
