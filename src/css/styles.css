@@ -130,7 +130,9 @@ img {
 /* animation practice */
 
 .animate img {
-  animation: 2s change-bg-color infinite alternate;
+  animation-name: change-bg-color, change-img-opacity;
+  animation-duration: 2s, 2s;
+  animation-iteration-count: infinite;
 }
 
 .animate p {
@@ -151,7 +153,18 @@ img {
   from {
     background-color: transparent;
   }
+
   to {
     background-color: rgb(43, 43, 43);
+  }
+}
+
+@keyframes change-img-opacity {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 0%;
   }
 }
