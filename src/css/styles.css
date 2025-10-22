@@ -173,13 +173,14 @@ img {
   width: 50%;
   animation-name: box-dance;
   animation-duration: 4s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
 }
 
 @keyframes box-dance {
   25% {
     /* 100px right and 0px down */
-    transform: translate(100px, 0);
+    transform: translate(100px, 0) rotate(360deg);
   }
 
   50% {
