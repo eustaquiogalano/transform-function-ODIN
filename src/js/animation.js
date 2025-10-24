@@ -9,9 +9,15 @@ export function listenToAnimation(event) {
       sp.textContent = 'end ';
       break;
     case 'animationiteration':
-      sp.textContent = 'new ';
+      sp.textContent = 'new np';
       break;
   }
 
   document.querySelector('.output').appendChild(sp);
+}
+
+export function fadingTea(event) {
+  const teaImg = document.querySelector('.fade-in-out img');
+  teaImg.classList.toggle('fade-in');
+  console.log(event.key);
 }

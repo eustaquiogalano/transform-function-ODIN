@@ -1,4 +1,4 @@
-import { listenToAnimation } from './animation';
+import { fadingTea, listenToAnimation } from './animation';
 
 const enterexitButton = document.querySelector('.in-and-out');
 const cupOfTeaIMG = document.querySelector('.in-and-out > img');
@@ -15,4 +15,6 @@ export function initAnimationEvents() {
   img.addEventListener('animationstart', listenToAnimation);
   img.addEventListener('animationend', listenToAnimation);
   img.addEventListener('animationiteration', listenToAnimation);
+
+  document.addEventListener('keydown', fadingTea);
 }
