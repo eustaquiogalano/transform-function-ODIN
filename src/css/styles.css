@@ -215,3 +215,30 @@ img {
     opacity: 1;
   }
 }
+
+@keyframes L-move {
+  50% {
+    transform: translate(0, var(--movement));
+  }
+
+  100% {
+    transform: translate(var(--movement), var(--movement));
+  }
+}
+
+.reusable-animation img {
+  width: 20%;
+  animation: L-move 5s linear infinite alternate;
+}
+
+.reusable-animation .t1 {
+  --movement: 150px;
+}
+
+.reusable-animation .t2 {
+  --movement: 100px;
+}
+
+.reusable-animation .t3 {
+  --movement: 50px;
+}
