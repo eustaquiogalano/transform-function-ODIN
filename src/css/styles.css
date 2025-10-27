@@ -242,3 +242,13 @@ img {
 .reusable-animation .t3 {
   --movement: 50px;
 }
+
+/* animation task 1 */
+
+.animation-task1 > img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.animation-task1 > img:hover {
+  transform: scale(1.3);
+}
