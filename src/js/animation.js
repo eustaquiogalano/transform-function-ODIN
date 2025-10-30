@@ -16,7 +16,11 @@ export function listenToAnimation(event) {
   document.querySelector('.output').appendChild(sp);
 }
 
-export function fadingTea(event) {
+export function fadingTea() {
   const teaImg = document.querySelector('.fade-in-out img');
   teaImg.classList.toggle('fade-in');
+}
+
+export function toggleModalDisplay() {
+  document.querySelector('.modal').classList.toggle('show');
 }
