@@ -282,3 +282,46 @@ img {
 .modal-pop-up > img {
   width: 70%;
 }
+
+/* drop-down exercise */
+
+.drop-down button {
+  font-size: 2rem;
+}
+
+#menu-button {
+  width: 100%;
+}
+
+.tea-button-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+}
+
+.tea-button {
+  width: 100%;
+}
+
+.show {
+  animation: show-drop-down 0.3s linear;
+  transform-origin: top;
+  display: block;
+}
+
+@keyframes show-drop-down {
+  0% {
+    transform: scaleY(0);
+  }
+
+  80% {
+    transform: scaleY(1.2);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}

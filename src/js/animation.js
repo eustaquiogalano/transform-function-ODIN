@@ -24,3 +24,8 @@ export function fadingTea() {
 export function toggleModalDisplay() {
   document.querySelector('.modal').classList.toggle('show');
 }
+
+export function toggleDropDown() {
+  document.querySelector('.tea-button-container').classList.toggle('show');
+  console.log('here');
+}
