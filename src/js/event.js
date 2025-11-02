@@ -10,6 +10,7 @@ const cupOfTeaIMG = document.querySelector('.in-and-out > img');
 const openModalButton = document.querySelector('#open-modal');
 const closeModalButton = document.querySelector('#close-modal');
 const menuButton = document.querySelector('#menu-button');
+const toggleColorMode = document.querySelector('#toggle-color-mode');
 
 export function initClickEvents() {
   // exercise 1
@@ -23,6 +24,11 @@ export function initClickEvents() {
 
   // exercise 3
   menuButton.addEventListener('click', toggleDropDown);
+
+  // dark and light mode toggle exercise
+  toggleColorMode.addEventListener('click', () => {
+    document.body.classList.toggle('light-theme');
+  });
 }
 
 export function initAnimationEvents() {
