@@ -340,3 +340,11 @@ img {
     transform: scaleY(1);
   }
 }
+
+/* system color theme automatically adopted  */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: white;
+    --background-color: white;
+  }
+}
